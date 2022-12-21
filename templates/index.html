@@ -1,0 +1,31 @@
+{% extends 'camp.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body%}
+<div class='content' style= "background:#000;">
+  <h1 style="color:Violet;" style = "text-align: center">Iris Flower Classification</h1>
+  <p></p>
+  <h2  style="color:Violet;" style = "text-align:center"> Enter Flower Characteristics</h2>
+  <p></p>
+
+  <form style = "text-align:center" action="/result" method="POST">
+    <input required type="number" step="0.1" name="sepal_length" placeholder="  Length of sepal"> <br>
+    <p></p>
+    <input required type="number" step="0.1" name="sepal_width" placeholder="    Width of sepal"><br>
+    <p></p>
+    <input required type="number" step="0.1" name="petal_width" placeholder="    Width of petal"><br>
+    <p></p>
+    <input required type="number" step="0.1" name="petal_length" placeholder="   Length of petal"><br>
+    <p></p>
+    <input type="submit">
+  </form>
+  <br>
+  <br>
+  <h3 style="color:Red;">
+    {{ pred_text }}
+  </h3>
+</div>
+{% endblock %}

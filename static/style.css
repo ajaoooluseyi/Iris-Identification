@@ -1,0 +1,35 @@
+.content{
+  border: 5px solid #FFFFF00;
+  text-align: center;
+}
+.rating{
+  border: 5px solid #FFFFF00;
+  text-align: center;
+}
+.update{
+  border: 5px solid #FFFFF00;
+  text-align: center;
+}
+.form{
+  border: 5px solid #FFFFF00;
+  text-align: center;
+}
+.table{
+  margin-left: auto;
+  margin-right: auto;
+}
+table, th, tr, td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+thead{
+  background: #395870
+  color : #fff;
+}
+a.button{
+  -webkit-appearance = button
+  -moz-appearance = button;
+  appearance = button;
+  text-decoration: none;
+  color: initial;
+}
